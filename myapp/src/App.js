@@ -4,7 +4,7 @@ import Todos from './components/Todos';
 
 class App extends Component{
   state= {
-    todo:[
+    todos:[
       {
         id: 1,
         title: 'Do homework',
@@ -16,7 +16,7 @@ class App extends Component{
         completed: false 
       },
       {
-        id: 2,
+        id: 3,
         title: 'Do homework3',
         completed: false 
       }
@@ -25,6 +25,7 @@ class App extends Component{
 
 
   render(){
+    console.log(this.state.todos);
       return(
         <div className="App">
         <Todos />

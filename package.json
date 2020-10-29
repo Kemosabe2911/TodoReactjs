@@ -1,0 +1,22 @@
+{
+  "name": "todoreactjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kemosabe2911/TodoReactjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kemosabe2911/TodoReactjs/issues"
+  },
+  "homepage": "https://github.com/Kemosabe2911/TodoReactjs#readme",
+  "dependencies": {
+    "create-react-app": "^4.0.0"
+  }
+}

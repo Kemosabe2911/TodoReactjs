@@ -36,7 +36,7 @@ class App extends Component{
   
   //Delete Todo
   delTodo = (id) =>{
-    console.log('hello');
+    //console.log('hello');
     this.setState({todos: [...this.state.todos.filter( todo =>
       todo.id !== id )]
     })}

@@ -10,9 +10,16 @@ export class Todoitems extends Component {
             borderBottom: "1px solid #ccc"
         }
     }
+
+    markComplete= (e) =>{
+        console.log(this.props)
+    }
+
+
     render() {
         return (
             <div style= {this.getStyle() }>
+                <input type="checkbox" onChange={ this.markComplete } />
                 <p>{ this.props.todo.title }</p>
             </div>
         )

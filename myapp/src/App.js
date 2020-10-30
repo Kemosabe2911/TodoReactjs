@@ -23,6 +23,7 @@ class App extends Component{
     ]
   }
 
+  //Toggle Complete
   markComplete = (id) =>{
     //console.log(id);
     this.setState( { todos: this.state.todos.map( todo => {
@@ -36,12 +37,16 @@ class App extends Component{
   render(){
     //console.log(this.state.todos);
       return(
-        <div className="App">
+        <div className="App" style={Container }>
         <Todos todos={this.state.todos} markComplete={ this.markComplete } />
         </div>
       )
   }
 }
 
+const Container = {
+  width: "90vw",
+  margin: "auto"
+}
 
 export default App;

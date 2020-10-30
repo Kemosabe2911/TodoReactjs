@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Todos from './components/Todos';
+import Header from './components/layout/Header';
 
 class App extends Component{
   state= {
@@ -45,7 +46,8 @@ class App extends Component{
     //console.log(this.state.todos);
       return(
         <div className="App" style={Container }>
-        <Todos todos={this.state.todos} markComplete={ this.markComplete } delTodo ={this.delTodo} />
+          <Header />
+          <Todos todos={this.state.todos} markComplete={ this.markComplete } delTodo ={this.delTodo} />
         </div>
       )
   }
@@ -55,5 +57,6 @@ const Container = {
   width: "90vw",
   margin: "auto"
 }
+
 
 export default App;

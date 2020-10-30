@@ -13,3 +13,21 @@ a{
   color: #333333;
   text-decoration: none;
 }
+
+.form{
+  margin: 20px 0px 0px 0px;
+  height: 30px;
+}
+
+.btn{
+  background-color: #333333;
+  color: #ffffff;
+  padding: 5px 10px;
+  border: none;
+  transition: 1s;
+}
+.btn:hover{
+  border: 2px solid #333333;
+  background: #ffffff;
+  color: #333333;
+}

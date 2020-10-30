@@ -3,22 +3,23 @@ import './App.css';
 import Todos from './components/Todos';
 import Header from './components/layout/Header';
 import AddTodo from './components/AddTodo';
+import {v4 as uuid} from "uuid";
 
 class App extends Component{
   state= {
     todos:[
       {
-        id: 1,
+        id: uuid(),
         title: 'Do homework',
         completed: false 
       },
       {
-        id: 2,
+        id: uuid(),
         title: 'Do homework2',
         completed: false 
       },
       {
-        id: 3,
+        id: uuid(),
         title: 'Do homework3',
         completed: false 
       }
@@ -48,7 +49,7 @@ class App extends Component{
   addTodo = (title) =>{
     //console.log(title);
     const newTodo ={
-      id: 4,
+      id: uuid(),
       title,
       completed: false
     }

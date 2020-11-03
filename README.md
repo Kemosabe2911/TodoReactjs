@@ -2,4 +2,4 @@
 
 A todo app using Reactjs 💙
 
-Used jsonplaceholder fortesting axios.
+Used jsonplaceholder for testing axios.

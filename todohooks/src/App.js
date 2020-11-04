@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
+
 function Todo({todo, index, completeTodo, removeTodo}){
   return(
     <div className="todo" style={{textDecoration: todo.isCompleted ? 'line-through': ''}}>
@@ -13,7 +14,7 @@ function Todo({todo, index, completeTodo, removeTodo}){
   )
 }
 
-function TodoForm({ addTodo }){
+function TodoForm({addTodo}){
   const [value,setValue]= useState('');
 
   const handleSubmit = e=> {
@@ -30,7 +31,7 @@ function TodoForm({ addTodo }){
   )
 }
 
-function App() {
+function App(){
   const [todos, setTodos]= useState([
     {
       text: 'Todo List item1',
@@ -61,7 +62,7 @@ function App() {
     const newTodos= [...todos];
     newTodos.splice(index,1);
     setTodos(newTodos);
-  }
+  };
 
   return (
     <div className="App">

@@ -20,11 +20,16 @@ function App() {
     fetchPosts();
   }, []);
 
-  console.log(posts);
+  //console.log(posts);
+
+  //get current posts
+  const indexofLastPost = currentPage * postsPerPage;
+  const indexofFirstPost = indexofLastPost - postsPerPage;
+  const currentPosts= posts.slice(indexofFirstPost,indexofLastPost);
 
   return (
     <div className="container">
-      <Posts posts={posts} loading={loading} />
+      <Posts posts={currentPosts} loading={loading} />
     </div>
   );
 }

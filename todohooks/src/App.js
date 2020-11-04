@@ -22,7 +22,7 @@ function TodoForm({ addTodo }){
 
   return(
     <form onSubmit={handleSubmit}>
-      <input type="text" className="input" value={value} onChange={ e=> setValue(e.target.value)} />
+      <input type="text" className="input" placeholder="Add Todo" value={value} onChange={ e=> setValue(e.target.value)} />
     </form>
   )
 }

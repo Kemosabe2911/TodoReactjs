@@ -30,7 +30,7 @@ function App() {
     <div className="App">
       <div className="container">
         {todos.map((todo, index) =>(
-          <Todo className="get-style" key={index} index={index} todo={todo} />
+          <Todo key={index} index={index} todo={todo} />
         ))}
       </div>
     </div>

@@ -32,7 +32,8 @@ a{
   float: right;
 }
 
-.get-style{
+.todo{
   background: #f4f4f4;
   padding: 10px;
+  border-bottom: 2px solid #ccc;
 }

@@ -1,5 +1,6 @@
 import React, { useState , useEffect } from 'react';
 import Posts from './components/Posts';
+import Pagination from './components/Pagination';
 import axios from 'axios';
 import './App.css';
 
@@ -30,6 +31,7 @@ function App() {
   return (
     <div className="container">
       <Posts posts={currentPosts} loading={loading} />
+      <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} />
     </div>
   );
 }

@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 *{
   margin: 0;
@@ -19,7 +17,7 @@ a{
 }
 
 .container{
-  width: 90vw;
+  width: 70vw;
   margin: auto;
 }
 

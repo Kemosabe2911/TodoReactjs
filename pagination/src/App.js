@@ -28,10 +28,12 @@ function App() {
   const indexofFirstPost = indexofLastPost - postsPerPage;
   const currentPosts= posts.slice(indexofFirstPost,indexofLastPost);
 
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <div className="container">
       <Posts posts={currentPosts} loading={loading} />
-      <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} />
+      <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} paginate={paginate} />
     </div>
   );
 }

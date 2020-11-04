@@ -22,3 +22,17 @@ a{
   width: 90vw;
   margin: auto;
 }
+
+.btn-style{
+  background: #ff0000;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  float: right;
+}
+
+.get-style{
+  background: #f4f4f4;
+  padding: 10px;
+}

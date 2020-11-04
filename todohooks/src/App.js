@@ -4,8 +4,11 @@ import './App.css';
 
 function Todo({todo, index}){
   return(
-    <div className="todo">
+    <div className="todo" style={ {textDecoration: todo.isCompleted ? 'line-through': ''}}>
       {todo.text}
+    <div>
+        <button onClick={() => completeTodo(index)}>Complete</button>
+    </div>
     </div>
   )
 }
@@ -46,13 +49,19 @@ function App() {
   const addTodo = text =>{
     const newTodos= [...todos, {text}];
     setTodos(newTodos);
-  }
+  };
+
+  const completeTodo = index =>{
+    const newTodos= [...todos];
+    newTodos[index].isCompleted= true;
+    setTodos(newTodos);
+  };
 
   return (
     <div className="App">
       <div className="container">
         {todos.map((todo, index) =>(
-          <Todo key={index} index={index} todo={todo} />
+          <Todo key={index} index={index} todo={todo} completeTodo={completeTodo} />
         ))}
         <TodoForm addTodo={addTodo} />
       </div>
